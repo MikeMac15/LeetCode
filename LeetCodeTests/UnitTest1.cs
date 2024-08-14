@@ -83,4 +83,20 @@ public class UnitTest1
         
         Assert.AreEqual("", result);
     }
+    [TestMethod]
+    public void IdxOfFirstTest1()
+    {
+        var result = IdxOfFirst.StrStr("hello", "ll");
+        
+        Assert.AreEqual(2, result);
+    }
+    [TestMethod]
+    public void IdxOfFirstTest2()
+    {
+        var result = IdxOfFirst.StrStr("aaaaa", "bba");
+        
+        Assert.AreEqual(-1, result);
+    }
+    // [TestMethod]
+
 }
