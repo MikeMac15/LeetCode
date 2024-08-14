@@ -47,4 +47,40 @@ public class UnitTest1
         
         Assert.AreEqual(1994, result);
     }
+    [TestMethod]
+    public void LenOfLastWordTest1()
+    {
+        var result = LenOfLastWord.LengthOfLastWord("Hello World");
+        
+        Assert.AreEqual(5, result);
+    }
+    [TestMethod]
+    public void LenOfLastWordTest2()
+    {
+        var result = LenOfLastWord.LengthOfLastWord("   fly me   to   the moon  ");
+        
+        Assert.AreEqual(4, result);
+    }
+    [TestMethod]
+    public void LongComPrefixTest1()
+    {
+        var result = LongComPrefix.LongestCommonPrefix(new string[] {"flower", "flow", "flight"});
+        
+        Assert.AreEqual("fl", result);
+    }
+    [TestMethod]
+    public void LongComPrefixTest2()
+    {
+        var result = LongComPrefix.LongestCommonPrefix(new string[] {"flower", "flow", "flowing"});
+        
+        Assert.AreEqual("flow", result);
+    }
+    /////////////////////////////////////////////////////////// ^10^ /////////////////////////////////////////////
+    [TestMethod]
+    public void LongComPrefixTest3()
+    {
+        var result = LongComPrefix.LongestCommonPrefix(new string[] {"dog", "racecar", "car"});
+        
+        Assert.AreEqual("", result);
+    }
 }
