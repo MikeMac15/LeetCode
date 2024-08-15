@@ -47,4 +47,69 @@ public class UnitTestHashMap
         Assert.AreEqual(true, result);
     }
     //////////////////^30^//////////////////
+    ///
+    [TestMethod]
+    public void WordPatternTest1()
+    {
+        var result = WordPatt.WordPattern("abba", "dog cat cat dog");
+
+        Assert.AreEqual(true, result);
+    }
+    [TestMethod]
+    public void WordPatternTest2()
+    {
+        var result = WordPatt.WordPattern("abba", "dog cat cat fish");
+
+        Assert.AreEqual(false, result);
+    }
+    [TestMethod]
+    public void WordPatternTest3()
+    {
+        var result = WordPatt.WordPattern("aaaa", "dog cat cat dog");
+
+        Assert.AreEqual(false, result);
+    }
+    [TestMethod]
+    public void ValidAnagramTest1()
+    {
+        var result = ValidAnagram.IsAnagram("anagram", "nagaram");
+
+        Assert.AreEqual(true, result);
+    }
+    [TestMethod]
+    public void ValidAnagramTest2()
+    {
+        var result = ValidAnagram.IsAnagram("rat", "car");
+
+        Assert.AreEqual(false, result);
+    }
+    [TestMethod]
+    public void ValidAnagramTest3()
+    {
+        var result = ValidAnagram.IsAnagram("aacc", "ccac");
+
+        Assert.AreEqual(false, result);
+    }
+    [   TestMethod]
+    public void TwoSumsTest1()
+    {
+        var result = TwoSums.TwoSum(new int[] { 2, 7, 11, 15 }, 9);
+
+        CollectionAssert.AreEqual(new int[] { 0, 1 }, result);
+    }
+    [TestMethod]
+    public void TwoSumsTest2()
+    {
+        var result = TwoSums.TwoSum(new int[] { 3, 2, 4 }, 6);
+
+        CollectionAssert.AreEqual(new int[] { 1, 2 }, result);
+    }
+    [TestMethod]
+    public void TwoSumsTest3()
+    {
+        var result = TwoSums.TwoSum(new int[] { 3, 3 }, 6);
+
+        CollectionAssert.AreEqual(new int[] { 0, 1 }, result);
+    }
+
 }
