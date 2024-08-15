@@ -25,5 +25,26 @@ public class UnitTestHashMap
 
         Assert.AreEqual(true, result);
     }
-    
+    [TestMethod]
+    public void IsomorphicTest1()
+    {
+        var result = Isomorphic.IsIsomorphic("egg", "add");
+
+        Assert.AreEqual(true, result);
+    }
+    [TestMethod]
+    public void IsomorphicTest2()
+    {
+        var result = Isomorphic.IsIsomorphic("foo", "bar");
+
+        Assert.AreEqual(false, result);
+    }
+    [TestMethod]
+    public void IsomorphicTest3()
+    {
+        var result = Isomorphic.IsIsomorphic("paper", "title");
+
+        Assert.AreEqual(true, result);
+    }
+    //////////////////^30^//////////////////
 }
