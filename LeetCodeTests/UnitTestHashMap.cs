@@ -111,5 +111,47 @@ public class UnitTestHashMap
 
         CollectionAssert.AreEqual(new int[] { 0, 1 }, result);
     }
+    [TestMethod]
+    public void HappyNumTest1()
+    {
+        var result = HappyNum.IsHappy(19);
 
+        Assert.AreEqual(true, result);
+    }
+    [TestMethod]
+    public void HappyNumTest2()
+    {
+        var result = HappyNum.IsHappy(2);
+
+        Assert.AreEqual(false, result);
+    }
+    [TestMethod]
+    public void HappyNumTest3()
+    {
+        var result = HappyNum.IsHappy(7);
+
+        Assert.AreEqual(true, result);
+    }
+    [TestMethod]
+    public void ContainsDupIITest1()
+    {
+        var result = ContainsDupII.ContainsNearbyDuplicate(new int[] { 1, 2, 3, 1 }, 3);
+
+        Assert.AreEqual(true, result);
+    }
+    [TestMethod]
+    public void ContainsDupIITest2()
+    {
+        var result = ContainsDupII.ContainsNearbyDuplicate(new int[] { 1, 0, 1, 1 }, 1);
+
+        Assert.AreEqual(true, result);
+    }
+    [TestMethod]
+    public void ContainsDupIITest3()
+    {
+        var result = ContainsDupII.ContainsNearbyDuplicate(new int[] { 1, 2, 3, 1, 2, 3 }, 2);
+
+        Assert.AreEqual(false, result);
+    }
+    
 }

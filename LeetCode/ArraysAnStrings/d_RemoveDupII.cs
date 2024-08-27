@@ -18,6 +18,25 @@
     }
     }
 
+// 08/26
+    // 2 HashSets instead of dictionary
+        //     HashSet<int> unique = new HashSet<int>();
+        //     HashSet<int> used = new HashSet<int>();
+        //     int k = 0;
+        //     for (int i = 0; i < nums.Length; ++i){
+        //         if (!used.Contains(nums[i])){
+        //             if (unique.Contains(nums[i])){
+        //                 used.Add(nums[i]);
+        //                 nums[k] = nums[i];
+        //             } else {
+        //                 unique.Add(nums[i]);
+        //                 nums[k] = nums[i];
+        //             }
+        //             k++;
+        //         }
+        //     }
+        //     return k;
+
 // python3
     // def removeDuplicates(self, nums: List[int]) -> int:
     //         dic = {}
